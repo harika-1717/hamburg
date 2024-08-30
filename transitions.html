@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0%;
+        }
+        img{
+            width:50px;
+        }
+        #checkbox{
+            display: none;
+        }
+        #checkbox:checked+.container{
+            transform: translateX(300px) translateY(0px)
+            
+        }
+        .container{
+            width:200px;
+            height:400px;
+            background-color:rgb(18, 238, 80);
+            position: absolute;
+            left:-300px;
+            transition:all 2s ease-in;
+            border-radius: 0px 10px 10px 0px;
+        }
+        h1{
+            margin: 35px;
+            border: 2px solid rgb(116, 112, 216);
+            background-color: rgb(255, 205, 205);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .h1:hover{
+            background-color: aqua;
+            color: red;
+            text-shadow: 2px 2px 4px yellow;
+        }
+        .h2:hover{
+            background-color: lightskyblue;
+            color: red;
+            text-shadow: 2px 2px 4px rgb(255, 0, 140);
+        }
+        .h3:hover{
+            background-color:darkorange;
+            color: green;
+            text-shadow: 2px 2px 4px orangered;
+        }
+        .h4:hover{
+            background-color: rgb(30, 0, 255);
+            color:white;
+            text-shadow: 2px 2px 4px rgb(204, 50, 119);
+        }
+    
+    </style>
+</head>
+<body>
+    <label for="checkbox"><img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/800px-Hamburger_icon.svg.png"
+        alt=""></label>
+<input type="checkbox" id="checkbox">
+    <div class="container">
+        <h1 class="h1">Name</h1>
+        <h1 class="h2">place </h1>
+        <h1 class="h3">email</h1>
+        <h1 class="h4">submit</h1>
+
+    </div>
+</body>
+</html>
